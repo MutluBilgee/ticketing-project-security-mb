@@ -5,7 +5,7 @@ services:
     container_name: mypostgres
     environment:
       POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: "admin"
+      POSTGRES_PASSWORD: "Cydeo1"
       POSTGRES_DB: "ticketing-app"
     ports:
       - "5435:5432"
@@ -16,7 +16,7 @@ services:
       - webnet
   ticketing-app:
     build: .
-    container_name: ticketingapp
+    container_name: ticketing-app-yaml
     ports:
       - "8080:8080"
     networks:
